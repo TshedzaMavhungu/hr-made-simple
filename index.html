@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HR Made Simple</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Made Simple</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="main">
-        <div class="navbar">
-            <div class="logo"><h2 class="logo">HR Made Simple</h2></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="content">
-            <h1>Welcome to HR Made Simple</h1>
-            <p>Your hub for practical HR knowledge and micro-courses.</p>
-        </div>
+<body class="bg-gray-900 text-white">
+  <nav class="bg-gray-800 p-4 fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">HR Made Simple</h1>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="courses.html" class="hover:text-yellow-300">Courses</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <section class="pt-24 text-center">
+    <h2 class="text-4xl font-bold mb-4">Welcome to HR Made Simple</h2>
+    <p class="text-lg">Your hub for practical HR knowledge and micro-courses.</p>
+  </section>
+
+  <section class="py-16 px-4 md:px-20">
+    <h3 class="text-2xl font-semibold mb-6">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold mb-2">Labour Law Basics</h4>
+        <p>Understand key legal obligations and rights in the workplace.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold mb-2">Office Administration</h4>
+        <p>Learn how to manage HR files, payroll, and records efficiently.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold mb-2">Workplace Communication</h4>
+        <p>Master professional communication skills for HR success.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-center p-4">
+    <p>© 2025 HR Made Simple. All rights reserved.</p>
+  </footer>
 </body>
 </html>
